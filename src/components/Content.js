@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import DateCard from "./DateCard"
+import DateCard from "./DateCard";
+import Styles from "./Styles";
 
 export default function Content() {
     //get today's date and set it as a variable called today
@@ -28,8 +29,8 @@ export default function Content() {
     }, [])
 
     return (
-        <div className="cardsContainer">
-            <DateCard date={apodData.date} explanation={apodData.explanation} hdurl={apodData.hdurl}title={apodData.title} url={apodData.url}/>
-        </div>
+        <Styles.CardContainer>
+            <DateCard date={apodData.date} explanation={apodData.explanation} hdurl={apodData.hdurl}title={apodData.title} url={apodData.url} copyright={apodData.copyright}/>
+        </Styles.CardContainer>
     );
 }
