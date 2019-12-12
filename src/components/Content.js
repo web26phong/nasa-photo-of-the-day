@@ -20,7 +20,7 @@ export default function Content() {
         //add "&date=2012-03-14" to the end of the api endpoint to choose a different date
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=9eIL6bkeb2lSZjeGEL1av3YnXAyrvNpUethvcA7j&date=${searchDate}`)
         .then(response => {
-            // returned object keys: date, explanation, hdurl, media_type, service_version, title, url
+            // returned object keys: copyright, date, explanation, hdurl, media_type, service_version, title, url
             setApodData(response.data);
         })
         .catch(error => {
