@@ -15,7 +15,7 @@ const IndividualContainer = mystyles.div`
     width: 90%;
     border: solid silver 2px;
     border-radius: 10px;
-    margin: 1.5% 0;
+    margin: 1% 0;
     background-color: rgba(0, 0, 0, 0.8);
 `;
 
@@ -37,7 +37,7 @@ const ContentContainer = mystyles.div`
     flex-direction: row-reverse;
     width: 90%;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 1%;
 `;
 
 const TitleDescriptionContainer = mystyles.div`
